@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Copy of OfflineEQ5D5L</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="libs/bootstrap.min.js"></script>
+  <link type="text/css" rel='stylesheet' href="css/bootstrap.min.css" />
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-messaging.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.0.1/color-thief.min.js"></script>
+  <script src="libs/jsonpath.js"></script>
+  <script src="libs/toastr.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/toastr.min.css" />
+
+  <script src="dist/DistLibLegacy.js"></script>
+  <script src="dist/DistLibBundle.js"></script>
+
+  <script src="./script.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <style>
+    @font-face {
+      font-family: 'Montserrat-Medium';
+      src: local('Montserrat-Medium'), url('./fonts/click.snapp.eq5d5l/Montserrat-Medium.ttf') format('truetype');
+    }
+    
+    @font-face {
+      font-family: 'Montserrat-Regular';
+      src: local('Montserrat-Regular'), url('./fonts/click.snapp.eq5d5l/Montserrat-Regular.ttf') format('truetype');
+    }
+    
+    @font-face {
+      font-family: 'Montserrat-SemiBold';
+      src: local('Montserrat-SemiBold'), url('./fonts/click.snapp.eq5d5l/Montserrat-SemiBold.ttf') format('truetype');
+    }
+
+  </style>
+  <!-- 939198-905279-735009-800880 -->
+
+</head>
+
+<body class="HTML5-deploy-wrapper">
+
+  <div id="j_140" class="snapp-html5 rotatable element fc Screen" overlay-color="rgba(255,255,255,0.75)" spinner-url="" obj-name="SplashScreen" style="background-color: rgb(247, 247, 247); width: 375px; height: 667px; transform: translate(100px, 100px) rotate(0deg);">
+    <div class="screen-container"><img src="" crossorigin="anonymous"></div>
+    <div id="j_141" class="snapp-html5 rotatable element fc Image" obj-name="Image" style="display: block; opacity: 1; background-color: rgba(255, 255, 255, 0); width: 80px; height: 80px; transform: translate(0px, 0px); top: 250px; left: 150px;"><img src="./img/click.snapp.eq5d5l/ezgif.com-resize.gif" crossorigin="anonymous" onmousedown="return false;" scale-type="stretch" style="width: inherit; height: inherit; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+  </div>
+  <div id="j_142" class="snapp-html5 rotatable element fc Screen" overlay-color="rgba(255,255,255,0.75)" spinner-url="" obj-name="MainDashboardScreen" style="background-color: rgb(85, 174, 212); width: 375px; height: 667px; transform: translate(575px, 100px) rotate(0deg);">
+    <div class="screen-container"><img src="" crossorigin="anonymous"></div>
+    <div id="j_143" class="snapp-html5 rotatable element fc Button" shadow-h-offset="0px" shadow-v-offset="0px" shadow-blur="0px" shadow-spread="0px" shadow-color="rgba(255, 255, 255, 0)" gradient-type="linear"
+      gradient-direction="0" gradient-start-color="rgba(255, 255, 255, 0)" gradient-end-color="rgba(255, 255, 255, 0)" obj-name="flowLauncherBtn" original-width="275" style="display: block; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 50px; border-style: solid; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 0px; width: auto; height: 40px; transform: translate(0px, 0px); bottom: 100px; left: 50px; right: 50px;">
+      <div type="button" class="html5 btn system" fontstyle="normal" style="opacity: 1; background-color: rgb(255, 255, 255); text-align: center; justify-content: center; font-family: Arial; font-size: 14px; font-style: normal; font-weight: normal; color: rgb(85, 174, 212); text-decoration: none rgb(255, 255, 255); background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));">
+        <div class="img-container" style="display: none;">
+          <img class="foreground" src="" crossorigin="anonymous">
+
+        </div>
+        <span class="text">Start Process</span>
+      </div>
+    </div>
+    <div id="j_144" class="snapp-html5 rotatable element fc Image" obj-name="Image2" style="display: block; opacity: 1; background-color: rgba(255, 255, 255, 0); width: 321px; height: 80px; transform: translate(27px, 0px); top: 200px;"><img src="./img/click.snapp.eq5d5l/snapClinical-logo-rounded-white-all.png" crossorigin="anonymous" onmousedown="return false;" scale-type="stretch" style="width: inherit; height: inherit; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+  </div>
+  <div id="j_145" class="snapp-html5 rotatable element fc Screen" overlay-color="rgba(255,255,255,0.75)" spinner-url="" obj-name="Screen2" style="background-color: rgb(255, 255, 255); width: 375px; height: 667px; transform: translate(1050px, 100px) rotate(0deg);">
+    <div class="screen-container"><img src="" crossorigin="anonymous"></div>
+  </div>
+  <div id="j_146" class="snapp-html5 rotatable element fc Screen" overlay-color="rgba(255,255,255,0.75)" spinner-url="./img/click.snapp.eq5d5l/ezgif.com-resize.gif" obj-name="SEQ5D5LMain" style="background-color: rgb(255, 255, 255); width: 375px; height: 667px; transform: translate(1525px, 100px) rotate(0deg);">
+    <div class="screen-container"><img src="" crossorigin="anonymous"></div>
+    <div id="j_147" class="snapp-html5 rotatable element fc Label" obj-name="LEQ5D5LMainTitle" style="display: block; background-color: rgb(5, 5, 5); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 375px; height: 65px; transform: translate(0px, 0px); top: 0px;">
+      <div class="label-wrapper">
+        <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="EQ-5D-5L" fontstyle="normal" style="font-size: 18px; font-family: Arial; font-style: normal; font-weight: normal; color: rgba(255, 255, 255, 0.9); text-align: center; vertical-align: middle; overflow: hidden; max-width: 375px; text-overflow: clip; height: 65px; padding: inherit;">EQ-5D-5L</div>
+      </div>
+    </div>
+    <div id="j_148" class="snapp-html5 rotatable element fc Label" obj-name="LEQ5D5LMainText" style="display: block; background-color: rgb(255, 255, 255); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 329px; height: 114px; transform: translate(24px, 0px); bottom: 179px;">
+      <div class="label-wrapper">
+        <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="Health&nbsp;Questionnaire
+English&nbsp;version&nbsp;for the UK" fontstyle="normal" style="font-size: 26px; font-family: Arial; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: center; vertical-align: middle; overflow: hidden; max-width: 329px; text-overflow: clip; height: 114px; padding: inherit;">Health&nbsp;Questionnaire<br>English&nbsp;version&nbsp;for&nbsp;the&nbsp;UK</div>
+      </div>
+    </div>
+    <div id="j_149" class="snapp-html5 rotatable element fc Image" obj-name="IEQ5D5LMain" style="display: block; opacity: 1; background-color: rgba(255, 255, 255, 0); width: 314px; height: 100px; transform: translate(30px, 0px); bottom: 469px;"><img src="./img/click.snapp.eq5d5l/EQ5D5L Home.png" crossorigin="anonymous" onmousedown="return false;" scale-type="stretch" style="width: inherit; height: inherit; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+    <div
+      id="j_150" class="snapp-html5 rotatable element fc Image" obj-name="IEQ5D5LMainLogo" style="display: block; opacity: 1; background-color: rgba(255, 255, 255, 0); width: 279px; height: 72px; transform: translate(48px, 0px); bottom: 347px;"><img src="./img/click.snapp.eq5d5l/EQ5D5L Home2.png" crossorigin="anonymous" onmousedown="return false;" scale-type="stretch" style="width: inherit; height: inherit; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+  <div
+    id="j_151" class="snapp-html5 rotatable element fc Label" obj-name="LEQ5D5LMainFooter" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 320px; height: 46px; transform: translate(28px, 0px); bottom: 11px;">
+    <div class="label-wrapper">
+      <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Rich Text" fontstyle="italic" style="white-space: unset; font-size: 10px; font-family: Arial; font-style: italic; font-weight: normal; color: rgb(0, 0, 0); text-align: center; vertical-align: middle; overflow: hidden; max-width: 320px; text-overflow: clip; height: 46px; padding: inherit;">©&nbsp;EuroQol&nbsp;Research&nbsp;Foundation.&nbsp;EQ-5D™&nbsp;is&nbsp;a&nbsp;trade&nbsp;mark&nbsp;<br>of&nbsp;the&nbsp;EuroQol&nbsp;Research&nbsp;Foundation</div>
+    </div>
+    </div>
+    <div id="j_152" class="snapp-html5 rotatable element fc Container" obj-name="CEQ5D5LMainNext" style="display: block; opacity: 1; background-color: rgba(247, 247, 247, 0); overflow: hidden; width: 136px; height: 52px; transform: translate(0px, 0px); bottom: 61px; right: 40px;">
+      <div class="container"></div>
+      <div id="j_153" class="snapp-html5 rotatable element fc Button" shadow-h-offset="0px" shadow-v-offset="0px" shadow-blur="0px" shadow-spread="0px" shadow-color="rgba(255,255,255,0)" gradient-type="linear" gradient-direction="0" gradient-start-color="rgba(255,255,255,0)"
+        gradient-end-color="rgba(255,255,255,0)" obj-name="BEQ5D5LMainNext" style="display: block; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 0px; width: 131px; height: 44px; transform: translate(4px, 7px) rotate(0deg);">
+        <div type="button" class="html5 btn custom" fontstyle="normal" style="opacity: 1; background-color: rgba(51, 176, 230, 0); text-align: center; justify-content: center; font-family: Helvetica; font-size: 14px; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-decoration: none; background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));">
+          <div class="img-container">
+            <img class="foreground" src="./img/click.snapp.eq5d5l/gradNext.png" crossorigin="anonymous">
+            <img class="highlight" src="./img/click.snapp.eq5d5l/inv.png" crossorigin="anonymous" style="display:none;">
+          </div>
+          <span class="text" style="height: 21px;">Next</span>
+        </div>
+      </div>
+    </div>
+    <div id="j_154" class="snapp-html5 rotatable element fc Container" obj-name="CEQ5D5MainFooterLine" style="display: block; opacity: 1; background-color: rgb(226, 226, 226); overflow: hidden; width: 375px; height: 1px; transform: translate(0px, 0px); bottom: 121px;">
+      <div class="container"></div>
+    </div>
+    <div id="j_155" class="snapp-html5 rotatable element fc Container" obj-name="CEQ5D5LMainPrev" style="display: block; opacity: 1; background-color: rgba(247, 247, 247, 0); overflow: hidden; width: 136px; height: 52px; transform: translate(0px, 0px); left: 40px; bottom: 61px;">
+      <div class="container"></div>
+      <div id="j_156" class="snapp-html5 rotatable element fc Button" shadow-h-offset="0px" shadow-v-offset="0px" shadow-blur="0px" shadow-spread="0px" shadow-color="rgba(255,255,255,0)" gradient-type="linear" gradient-direction="0" gradient-start-color="rgba(255,255,255,0)"
+        gradient-end-color="rgba(255,255,255,0)" obj-name="BEQ5D5LMainPrev" style="display: block; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 0px; width: 130px; height: 44px; transform: translate(3px, 7px) rotate(0deg);">
+        <div type="button" class="html5 btn custom" fontstyle="normal" style="opacity: 1; background-color: rgba(51, 176, 230, 0); text-align: center; justify-content: center; font-family: Helvetica; font-size: 14px; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-decoration: none; background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));">
+          <div class="img-container">
+            <img class="foreground" src="./img/click.snapp.eq5d5l/gradBack.png" crossorigin="anonymous">
+            <img class="highlight" src="./img/click.snapp.eq5d5l/inv.png" crossorigin="anonymous" style="display:none;">
+          </div>
+          <span class="text" style="height: 21px;">Previous</span>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="j_157" class="snapp-html5 rotatable element fc Screen" overlay-color="rgba(255,255,255,0.75)" spinner-url="./img/click.snapp.eq5d5l/ezgif.com-resize.gif" obj-name="SEQ5D5LQuestion"
+      style="background-color: rgb(255, 255, 255); width: 375px; height: 667px; transform: translate(2000px, 100px) rotate(0deg);">
+      <div class="screen-container"><img src="" crossorigin="anonymous"></div>
+      <div id="j_158" class="snapp-html5 rotatable element fc Label" obj-name="LEQ5D5LQuestionTitle" style="display: block; background-color: rgb(0, 0, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 375px; height: 65px; transform: translate(0px, 0px); top: 0px;">
+        <div class="label-wrapper">
+          <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="EQ-5D-5L" fontstyle="normal" style="font-size: 18px; font-family: Arial; font-style: normal; font-weight: normal; color: rgb(255, 255, 255); text-align: center; vertical-align: middle; overflow: hidden; max-width: 375px; text-overflow: clip; height: 65px; padding: inherit;">EQ-5D-5L</div>
+        </div>
+      </div>
+      <div id="j_159" class="snapp-html5 rotatable element fc Container" obj-name="CEQ5D5LQuestionLine" style="display: block; opacity: 1; background-color: rgb(226, 226, 226); overflow: hidden; width: 375px; height: 1px; transform: translate(0px, 0px); bottom: 121px;">
+        <div class="container"></div>
+      </div>
+      <div id="j_160" class="snapp-html5 rotatable element fc Label" obj-name="LEQ5D5LQuestionFooter" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 320px; height: 46px; transform: translate(28px, 0px); bottom: 11px;">
+        <div class="label-wrapper">
+          <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Rich Text" fontstyle="italic" style="white-space: unset; font-size: 10px; font-family: Arial; font-style: italic; font-weight: normal; color: rgb(0, 0, 0); text-align: center; vertical-align: middle; overflow: hidden; max-width: 320px; text-overflow: clip; height: 46px; padding: inherit;">©&nbsp;EuroQol&nbsp;Research&nbsp;Foundation.&nbsp;EQ-5D™&nbsp;is&nbsp;a&nbsp;trade&nbsp;mark&nbsp;<br>of&nbsp;the&nbsp;EuroQol&nbsp;Research&nbsp;Foundation</div>
+        </div>
+      </div>
+      <div id="j_161" class="snapp-html5 rotatable element fc Container" obj-name="CEQ5D5LQuestionPrev" style="display: block; opacity: 1; background-color: rgba(247, 247, 247, 0); overflow: hidden; width: 136px; height: 52px; transform: translate(0px, 0px); left: 40px; bottom: 61px;">
+        <div class="container"></div>
+        <div id="j_162" class="snapp-html5 rotatable element fc Button" shadow-h-offset="0px" shadow-v-offset="0px" shadow-blur="0px" shadow-spread="0px" shadow-color="rgba(255,255,255,0)" gradient-type="linear" gradient-direction="0" gradient-start-color="rgba(255,255,255,0)"
+          gradient-end-color="rgba(255,255,255,0)" obj-name="BEQ5D5LQuestionPrev" style="display: block; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 0px; width: 130px; height: 44px; transform: translate(3px, 7px) rotate(0deg);">
+          <div type="button" class="html5 btn custom" fontstyle="normal" style="opacity: 1; background-color: rgba(51, 176, 230, 0); text-align: center; justify-content: center; font-family: Helvetica; font-size: 14px; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-decoration: none; background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));">
+            <div class="img-container">
+              <img class="foreground" src="./img/click.snapp.eq5d5l/gradBack.png" crossorigin="anonymous">
+              <img class="highlight" src="./img/click.snapp.eq5d5l/inv.png" crossorigin="anonymous" style="display:none;">
+            </div>
+            <span class="text" style="height: 21px;">Previous</span>
+          </div>
+        </div>
+      </div>
+      <div id="j_163" class="snapp-html5 rotatable element fc Container" obj-name="CEQ5D5LQuestionNext" style="display: block; opacity: 1; background-color: rgba(247, 247, 247, 0); overflow: hidden; width: 136px; height: 52px; transform: translate(0px, 0px); right: 40px; bottom: 61px;">
+        <div class="container"></div>
+        <div id="j_164" class="snapp-html5 rotatable element fc Button" shadow-h-offset="0px" shadow-v-offset="0px" shadow-blur="0px" shadow-spread="0px" shadow-color="rgba(255,255,255,0)" gradient-type="linear" gradient-direction="0" gradient-start-color="rgba(255,255,255,0)"
+          gradient-end-color="rgba(255,255,255,0)" obj-name="BEQ5D5LQuestionNext" style="display: block; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 0px; width: 131px; height: 44px; transform: translate(4px, 7px) rotate(0deg);">
+          <div type="button" class="html5 btn custom" fontstyle="normal" style="opacity: 1; background-color: rgba(51, 176, 230, 0); text-align: center; justify-content: center; font-family: Helvetica; font-size: 14px; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-decoration: none; background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));">
+            <div class="img-container">
+              <img class="foreground" src="./img/click.snapp.eq5d5l/gradNext.png" crossorigin="anonymous">
+              <img class="highlight" src="./img/click.snapp.eq5d5l/inv.png" crossorigin="anonymous" style="display:none;">
+            </div>
+            <span class="text" style="height: 21px;">Next</span>
+          </div>
+        </div>
+      </div>
+      <div id="j_165" class="snapp-html5 rotatable element fc Container" obj-name="EQ5D5LRBInput" style="display: block; opacity: 1; background-color: rgba(247, 247, 247, 0); overflow: hidden; border-color: rgb(0, 0, 0); border-style: hidden; width: 375px; height: 436px; transform: translate(0px, 0px); top: 85px;">
+        <div class="container"></div>
+        <div id="j_166" class="snapp-html5 rotatable element fc Label" obj-name="EQ5D5LRBInput_LEQ5D5L" style="display: block; background-color: rgba(219, 168, 168, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 320px; height: 100px; transform: translate(30px, 13px) rotate(0deg);">
+          <div class="label-wrapper">
+            <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Rich Text" fontstyle="normal" style="white-space: unset; font-size: 16px; font-family: Arial; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: left; vertical-align: top; overflow: hidden; max-width: 320px; text-overflow: clip; height: 100px; padding: inherit;">Question</div>
+          </div>
+        </div>
+        <div id="j_167" class="snapp-html5 rotatable element fc ListView" show-scroll="when scroll" obj-name="EQ5D5LRBInput_EQ5D5LRBRBLV" style="display: block; opacity: 1; background-color: rgba(255, 255, 255, 0); border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 349px; height: 383px; transform: translate(0px, 42px) rotate(0deg);">
+          <div class="ListView"></div>
+          <div id="j_168" class="rotatable element fc ListViewCell" cell-highlight="NO" cell-highlight-color="#ffffff" cell-bg-color="rgba(255, 255, 255, 0)" obj-name="EQ5D5LRBInput_EQ5D5LRBLVC" style="opacity: 1; background-color: rgba(255, 255, 255, 0); width: 349px; height: 73px; transform: translate(0px, 0px) rotate(0deg);">
+            <div class="ListViewCell"></div>
+            <div id="j_169" class="snapp-html5 rotatable element fc Image" obj-name="EQ5D5LRBInput_EQ5DRBIcon" style="display: block; opacity: 1; background-color: rgba(255, 255, 255, 0); width: 322px; height: 67px; transform: translate(18px, 0px) rotate(0deg);"><img src="./img/click.snapp.eq5d5l/button.png" crossorigin="anonymous" onmousedown="return false;" scale-type="stretch" style="width: inherit; height: inherit; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+            <div
+              id="j_170" class="snapp-html5 rotatable element fc Label" obj-name="EQ5D5LRBInput_EQ5DRBText" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 263px; height: 37px; transform: translate(51px, 14px) rotate(0deg);">
+              <div class="label-wrapper">
+                <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="Option" fontstyle="normal" style="font-size: 16px; font-family: Arial; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: center; vertical-align: middle; overflow: hidden; max-width: 263px; text-overflow: clip; height: 37px; padding: inherit;">Option</div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div id="j_171" class="snapp-html5 rotatable element fc Label" obj-name="EQ5D5LRBInput_ErrorMsg" original-width="375" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: auto; height: 40px; transform: translate(0px, 0px); bottom: 2px; left: 0px; right: 0px;">
+        <div class="label-wrapper">
+          <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="Error" fontstyle="normal" style="font-size: 12px; font-family: Arial; font-style: normal; font-weight: normal; color: rgb(240, 45, 45); text-align: center; vertical-align: middle; overflow: hidden; max-width: 375px; text-overflow: clip; height: 40px; padding: inherit;">Error</div>
+        </div>
+      </div>
+    </div>
+    <div id="j_172" class="snapp-html5 rotatable element fc Container" obj-name="CEQ5D5LQuestionOverlay" original-height="668" original-width="375" style="display: block; opacity: 1; background-color: rgba(0, 0, 0, 0.53); overflow: hidden; border-color: rgb(0, 0, 0); border-style: hidden; width: auto; height: auto; transform: translate(0px, 0px); top: 0px; bottom: 0px; left: 0px; right: 0px;">
+      <div class="container"></div>
+      <div id="j_173" class="snapp-html5 rotatable element fc Container" obj-name="CEQ5D5LQuestionNotification" style="display: block; opacity: 1; background-color: rgba(247, 247, 247, 0); overflow: hidden; width: 331px; height: 153px; transform: translate(25px, 0px); top: 25px;">
+        <div class="container"></div>
+        <div id="j_174" class="snapp-html5 rotatable element fc Label" obj-name="LEQ5D5LQuestionNotification" style="display: block; background-color: rgb(255, 255, 255); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 331px; height: 153px; transform: translate(0px, 0px) rotate(0deg);">
+          <div class="label-wrapper">
+            <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="" fontstyle="normal" style="font-size: 14px; font-family: Arial; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: left; vertical-align: middle; overflow: hidden; max-width: 331px; text-overflow: clip; height: 153px; padding: inherit;"></div>
+          </div>
+        </div>
+        <div id="j_175" class="snapp-html5 rotatable element fc Label" obj-name="LEQ5D5LQuestionNotificationText" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 269px; height: 153px; transform: translate(37px, 2px) rotate(0deg);">
+          <div class="label-wrapper">
+            <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Rich Text" fontstyle="normal" style="white-space: unset; font-size: 14px; font-family: Helvetica; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: left; vertical-align: middle; overflow: hidden; max-width: 269px; text-overflow: clip; height: 153px; padding: inherit;">Please&nbsp;answer&nbsp;the&nbsp;required&nbsp;question(s)</div>
+          </div>
+        </div>
+        <div id="j_176" class="snapp-html5 rotatable element fc Button" shadow-h-offset="0px" shadow-v-offset="0px" shadow-blur="0px" shadow-spread="0px" shadow-color="rgba(255,255,255,0)" gradient-type="linear" gradient-direction="0" gradient-start-color="rgba(255,255,255,0)"
+          gradient-end-color="rgba(255,255,255,0)" obj-name="BEQ5D5LQuestionNotificationOK" style="display: block; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 0px; width: 141px; height: 45px; transform: translate(180px, 99px) rotate(0deg);">
+          <div type="button" class="html5 btn custom" fontstyle="normal" style="opacity: 1; background-color: rgba(51, 176, 230, 0); text-align: center; justify-content: center; font-family: Arial; font-size: 14px; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-decoration: none; background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));">
+            <div class="img-container">
+              <img class="foreground" src="./img/click.snapp.eq5d5l/button.png" crossorigin="anonymous">
+              <img class="highlight" src="./img/click.snapp.eq5d5l/click.snapp.user81.radiobuttonsuicomponent/buttonClicked.png" crossorigin="anonymous" style="display:none;">
+            </div>
+            <span class="text" style="height: 21px;">OK</span>
+          </div>
+        </div>
+        <div id="j_177" class="snapp-html5 rotatable element fc Button" shadow-h-offset="0px" shadow-v-offset="0px" shadow-blur="0px" shadow-spread="0px" shadow-color="rgba(255,255,255,0)" gradient-type="linear" gradient-direction="0" gradient-start-color="rgba(255,255,255,0)"
+          gradient-end-color="rgba(255,255,255,0)" obj-name="BEQ5D5LQuestionNotification" style="display: block; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 0px; width: 30px; height: 30px; transform: translate(300px, 0px) rotate(0deg);">
+          <div type="button" class="html5 btn system" fontstyle="normal" style="opacity: 1; background-color: rgba(51, 176, 230, 0); text-align: center; justify-content: center; font-family: Helvetica; font-size: 14px; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-decoration: none; background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));">
+            <div class="img-container" style="display: none;">
+              <img class="foreground" src="" crossorigin="anonymous">
+
+            </div>
+            <span class="text">X</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="j_178" class="snapp-html5 rotatable element fc Label" obj-name="ErrorLabelSEQ5DL" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 322px; height: 40px; transform: translate(21px, 479px) rotate(0deg);">
+      <div class="label-wrapper">
+        <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="Error" fontstyle="normal" style="font-size: 14px; font-family: Arial; font-style: normal; font-weight: normal; color: rgb(255, 0, 0); text-align: center; vertical-align: middle; overflow: hidden; max-width: 322px; text-overflow: clip; height: 40px; padding: inherit;">Error</div>
+      </div>
+    </div>
+    </div>
+    <div id="j_179" class="snapp-html5 rotatable element fc Screen" overlay-color="rgba(255,255,255,0.75)" spinner-url="./img/click.snapp.eq5d5l/ezgif.com-resize.gif" obj-name="SEQ5D5LHM" style="background-color: rgb(255, 255, 255); width: 375px; height: 667px; transform: translate(2475px, 100px) rotate(0deg);">
+      <div class="screen-container"><img src="" crossorigin="anonymous"></div>
+      <div id="j_180" class="snapp-html5 rotatable element fc Label" obj-name="LEQ5D5LHMTitle" style="display: block; background-color: rgb(0, 0, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 375px; height: 65px; transform: translate(0px, 0px); top: 0px;">
+        <div class="label-wrapper">
+          <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="EQ-5D-5L" fontstyle="normal" style="font-size: 18px; font-family: Arial; font-style: normal; font-weight: normal; color: rgb(255, 255, 255); text-align: center; vertical-align: middle; overflow: hidden; max-width: 375px; text-overflow: clip; height: 65px; padding: inherit;">EQ-5D-5L</div>
+        </div>
+      </div>
+      <div id="j_181" class="snapp-html5 rotatable element fc Label" obj-name="LEQ5D5LHMFooter" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 320px; height: 46px; transform: translate(28px, 0px); bottom: 11px;">
+        <div class="label-wrapper">
+          <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Rich Text" fontstyle="italic" style="white-space: unset; font-size: 10px; font-family: Arial; font-style: italic; font-weight: normal; color: rgb(0, 0, 0); text-align: center; vertical-align: middle; overflow: hidden; max-width: 320px; text-overflow: clip; height: 46px; padding: inherit;">©&nbsp;EuroQol&nbsp;Research&nbsp;Foundation.&nbsp;EQ-5D™&nbsp;is&nbsp;a&nbsp;trade&nbsp;mark<br>of&nbsp;the&nbsp;EuroQol&nbsp;Research&nbsp;Foundation</div>
+        </div>
+      </div>
+      <div id="j_182" class="snapp-html5 rotatable element fc Container" obj-name="CEQ5D5LHMFooterLine" style="display: block; opacity: 1; background-color: rgb(226, 226, 226); overflow: hidden; width: 375px; height: 1px; transform: translate(0px, 0px); bottom: 121px;">
+        <div class="container"></div>
+      </div>
+      <div id="j_183" class="snapp-html5 rotatable element fc Container" obj-name="CEQ5D5LHMPrev" style="display: block; opacity: 1; background-color: rgba(247, 247, 247, 0); overflow: hidden; width: 136px; height: 52px; transform: translate(0px, 0px); bottom: 61px; left: 40px;">
+        <div class="container"></div>
+        <div id="j_184" class="snapp-html5 rotatable element fc Button" shadow-h-offset="0px" shadow-v-offset="0px" shadow-blur="0px" shadow-spread="0px" shadow-color="rgba(255,255,255,0)" gradient-type="linear" gradient-direction="0" gradient-start-color="rgba(255,255,255,0)"
+          gradient-end-color="rgba(255,255,255,0)" obj-name="BEQ5D5LHMPrev" style="display: block; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 0px; width: 130px; height: 44px; transform: translate(3px, 7px) rotate(0deg);">
+          <div type="button" class="html5 btn custom" fontstyle="normal" style="opacity: 1; background-color: rgba(51, 176, 230, 0); text-align: center; justify-content: center; font-family: Helvetica; font-size: 14px; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-decoration: none; background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));">
+            <div class="img-container">
+              <img class="foreground" src="./img/click.snapp.eq5d5l/gradBack.png" crossorigin="anonymous">
+              <img class="highlight" src="./img/click.snapp.eq5d5l/inv.png" crossorigin="anonymous" style="display:none;">
+            </div>
+            <span class="text" style="height: 21px;">Previous</span>
+          </div>
+        </div>
+      </div>
+      <div id="j_185" class="snapp-html5 rotatable element fc Container" obj-name="CEQ5D5LHMNext" style="display: block; opacity: 1; background-color: rgba(247, 247, 247, 0); overflow: hidden; width: 136px; height: 52px; transform: translate(0px, 0px); bottom: 61px; right: 40px;">
+        <div class="container"></div>
+        <div id="j_186" class="snapp-html5 rotatable element fc Button" shadow-h-offset="0px" shadow-v-offset="0px" shadow-blur="0px" shadow-spread="0px" shadow-color="rgba(255,255,255,0)" gradient-type="linear" gradient-direction="0" gradient-start-color="rgba(255,255,255,0)"
+          gradient-end-color="rgba(255,255,255,0)" obj-name="BEQ5D5LHMNext" style="display: block; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 0px; width: 131px; height: 44px; transform: translate(4px, 7px) rotate(0deg);">
+          <div type="button" class="html5 btn custom" fontstyle="normal" style="opacity: 1; background-color: rgba(51, 176, 230, 0); text-align: center; justify-content: center; font-family: Helvetica; font-size: 14px; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-decoration: none; background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));">
+            <div class="img-container">
+              <img class="foreground" src="./img/click.snapp.eq5d5l/gradNext.png" crossorigin="anonymous">
+              <img class="highlight" src="./img/click.snapp.eq5d5l/inv.png" crossorigin="anonymous" style="display:none;">
+            </div>
+            <span class="text" style="height: 21px;">Next</span>
+          </div>
+        </div>
+      </div>
+      <div id="j_187" class="snapp-html5 rotatable element fc Label" obj-name="LEQ5D5LHMText" original-width="128" style="display: block; background-color: rgb(255, 255, 255); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: auto; height: 124px; transform: translate(0px, 0px); top: 130px; left: 30px; right: 217px;">
+        <div class="label-wrapper">
+          <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="Please tap on the   scale to indicate     how your health is   today." fontstyle="normal" style="font-size: 14px; font-family: Arial; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: left; vertical-align: top; overflow: hidden; max-width: 128px; text-overflow: clip; height: 124px; padding: inherit;">Please&nbsp;tap&nbsp;on&nbsp;the&nbsp;&nbsp;&nbsp;scale&nbsp;to&nbsp;indicate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;how&nbsp;your&nbsp;health&nbsp;is&nbsp;&nbsp;&nbsp;today.</div>
+        </div>
+      </div>
+      <div id="j_188" class="snapp-html5 rotatable element fc Label" obj-name="LEQ5D5LHMBox" style="display: block; background-color: rgb(0, 0, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 114px; height: 112px; transform: translate(0px, 0px); top: 243px; left: 53px;">
+        <div class="label-wrapper">
+          <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Rich Text" fontstyle="normal" style="white-space: unset; font-size: 14px; font-family: Arial; font-style: normal; font-weight: normal; color: rgb(255, 255, 255); text-align: center; vertical-align: top; overflow: hidden; max-width: 114px; text-overflow: clip; height: 112px; padding: inherit;">YOUR HEALTH TODAY</div>
+        </div>
+      </div>
+      <div id="j_189" class="snapp-html5 rotatable element fc Label" obj-name="LEQ5D5LHMBoxValue" original-width="77" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: auto; height: 44px; transform: translate(0px, 0px); left: 78px; right: 220px; top: 304px;">
+        <div class="label-wrapper">
+          <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="" fontstyle="bold" style="font-size: 24px; font-family: Arial; font-style: normal; font-weight: bold; color: rgb(255, 255, 255); text-align: center; vertical-align: middle; overflow: hidden; max-width: 77px; text-overflow: clip; height: 44px; padding: inherit;"></div>
+        </div>
+      </div>
+      <div id="j_190" class="snapp-html5 rotatable element fc Label" obj-name="LEQ5D5LHMText2" style="display: block; background-color: rgb(255, 255, 255); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 126px; height: 76px; transform: translate(203px, 0px); top: 70px;">
+        <div class="label-wrapper">
+          <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="The best health you can imagine" fontstyle="bold" style="font-size: 14px; font-family: Arial; font-style: normal; font-weight: bold; color: rgb(0, 0, 0); text-align: left; vertical-align: middle; overflow: hidden; max-width: 126px; text-overflow: clip; height: 76px; padding: inherit;">The&nbsp;best&nbsp;health&nbsp;you&nbsp;can&nbsp;imagine</div>
+        </div>
+      </div>
+      <div id="j_191" class="snapp-html5 rotatable element fc Label" obj-name="LEQ5D5LHMText3" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 140px; height: 76px; transform: translate(200px, 0px); top: 450px;">
+        <div class="label-wrapper">
+          <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="The worst health you can imagine" fontstyle="bold" style="font-size: 14px; font-family: Arial; font-style: normal; font-weight: bold; color: rgb(0, 0, 0); text-align: left; vertical-align: middle; overflow: hidden; max-width: 140px; text-overflow: clip; height: 76px; padding: inherit;">The&nbsp;worst&nbsp;health&nbsp;you&nbsp;can&nbsp;imagine</div>
+        </div>
+      </div>
+      <div id="j_192" class="snapp-html5 rotatable element fc Container" obj-name="VASInputEQ5D5LComponent" style="display: block; opacity: 1; background-color: rgba(247, 247, 247, 0); overflow: hidden; width: 180px; height: 342px; transform: translate(195px, 0px); top: 120px;">
+        <div class="container"></div>
+        <div id="j_193" class="snapp-html5 rotatable element fc Label" obj-name="VASInputEQ5D5LComponent_VASQuestionEQ5D5L" original-height="203" original-width="95" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: auto; height: auto; transform: translate(0px, 0px); left: 25px; right: 25px; top: 0px; bottom: 140px;">
+          <div class="label-wrapper">
+            <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Rich Text" fontstyle="normal" style="white-space: unset; font-size: 15px; font-family: Arial; font-style: normal; font-weight: normal; color: rgba(0, 0, 0, 0); text-align: left; vertical-align: middle; overflow: hidden; max-width: 95px; text-overflow: clip; height: 203px; padding: inherit;">Question</div>
+          </div>
+        </div>
+        <div id="j_194" class="snapp-html5 rotatable element fc Label" obj-name="VASInputEQ5D5LComponent_LEQ5D5LVASErrorMsg" original-width="145" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: auto; height: 31px; transform: translate(0px, 0px); bottom: 0px; left: 0px; right: 0px;">
+          <div class="label-wrapper">
+            <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="Error Message" fontstyle="normal" style="font-size: 12px; font-family: Arial; font-style: normal; font-weight: normal; color: rgb(235, 52, 52); text-align: left; vertical-align: top; overflow: hidden; max-width: 145px; text-overflow: clip; height: 31px; padding: inherit;">Error&nbsp;Message</div>
+          </div>
+        </div>
+        <div id="j_195" class="snapp-html5 rotatable element fc Label" obj-name="VASInputEQ5D5LComponent_LEQ5D5LHM100" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 32px; height: 17px; transform: translate(0px, 15px) rotate(0deg);">
+          <div class="label-wrapper">
+            <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="100" fontstyle="normal" style="font-size: 14px; font-family: &quot;Times New Roman&quot;; font-style: normal; font-weight: normal; color: rgb(71, 70, 70); text-align: right; vertical-align: middle; overflow: hidden; max-width: 32px; text-overflow: clip; height: 17px; padding: inherit;">100</div>
+          </div>
+        </div>
+        <div id="j_196" class="snapp-html5 rotatable element fc Label" obj-name="VASInputEQ5D5LComponent_LEQ5D5LHM90" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 25px; height: 17px; transform: translate(4px, 43px) rotate(0deg);">
+          <div class="label-wrapper">
+            <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="90" fontstyle="normal" style="font-size: 14px; font-family: &quot;Times New Roman&quot;; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: right; vertical-align: middle; overflow: hidden; max-width: 25px; text-overflow: clip; height: 17px; padding: inherit;">90</div>
+          </div>
+        </div>
+        <div id="j_197" class="snapp-html5 rotatable element fc Label" obj-name="VASInputEQ5D5LComponent_LEQ5D5LHM80" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 25px; height: 17px; transform: translate(4px, 72px) rotate(0deg);">
+          <div class="label-wrapper">
+            <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="80" fontstyle="normal" style="font-size: 14px; font-family: &quot;Times New Roman&quot;; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: right; vertical-align: middle; overflow: hidden; max-width: 25px; text-overflow: clip; height: 17px; padding: inherit;">80</div>
+          </div>
+        </div>
+        <div id="j_198" class="snapp-html5 rotatable element fc Label" obj-name="VASInputEQ5D5LComponent_LEQ5D5LHM70" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 25px; height: 17px; transform: translate(4px, 99px) rotate(0deg);">
+          <div class="label-wrapper">
+            <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="70" fontstyle="normal" style="font-size: 14px; font-family: &quot;Times New Roman&quot;; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: right; vertical-align: middle; overflow: hidden; max-width: 25px; text-overflow: clip; height: 17px; padding: inherit;">70</div>
+          </div>
+        </div>
+        <div id="j_199" class="snapp-html5 rotatable element fc Label" obj-name="VASInputEQ5D5LComponent_LEQ5D5LHM060" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 25px; height: 17px; transform: translate(4px, 127px) rotate(0deg);">
+          <div class="label-wrapper">
+            <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="60" fontstyle="normal" style="font-size: 14px; font-family: &quot;Times New Roman&quot;; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: right; vertical-align: middle; overflow: hidden; max-width: 25px; text-overflow: clip; height: 17px; padding: inherit;">60</div>
+          </div>
+        </div>
+        <div id="j_200" class="snapp-html5 rotatable element fc Label" obj-name="VASInputEQ5D5LComponent_LEQ5D5LHM50" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 25px; height: 17px; transform: translate(4px, 154px) rotate(0deg);">
+          <div class="label-wrapper">
+            <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="50" fontstyle="normal" style="font-size: 14px; font-family: &quot;Times New Roman&quot;; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: right; vertical-align: middle; overflow: hidden; max-width: 25px; text-overflow: clip; height: 17px; padding: inherit;">50</div>
+          </div>
+        </div>
+        <div id="j_201" class="snapp-html5 rotatable element fc Label" obj-name="VASInputEQ5D5LComponent_LEQ5D5LHM40" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 25px; height: 17px; transform: translate(4px, 182px) rotate(0deg);">
+          <div class="label-wrapper">
+            <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="40" fontstyle="normal" style="font-size: 14px; font-family: &quot;Times New Roman&quot;; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: right; vertical-align: middle; overflow: hidden; max-width: 25px; text-overflow: clip; height: 17px; padding: inherit;">40</div>
+          </div>
+        </div>
+        <div id="j_202" class="snapp-html5 rotatable element fc Label" obj-name="VASInputEQ5D5LComponent_LEQ5D5LHM30" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 25px; height: 17px; transform: translate(4px, 209px) rotate(0deg);">
+          <div class="label-wrapper">
+            <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="30" fontstyle="normal" style="font-size: 14px; font-family: &quot;Times New Roman&quot;; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: right; vertical-align: middle; overflow: hidden; max-width: 25px; text-overflow: clip; height: 17px; padding: inherit;">30</div>
+          </div>
+        </div>
+        <div id="j_203" class="snapp-html5 rotatable element fc Label" obj-name="VASInputEQ5D5LComponent_LEQ5D5LHM20" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 25px; height: 17px; transform: translate(2px, 237px) rotate(0deg);">
+          <div class="label-wrapper">
+            <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="20" fontstyle="normal" style="font-size: 14px; font-family: &quot;Times New Roman&quot;; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: right; vertical-align: middle; overflow: hidden; max-width: 25px; text-overflow: clip; height: 17px; padding: inherit;">20</div>
+          </div>
+        </div>
+        <div id="j_204" class="snapp-html5 rotatable element fc Label" obj-name="VASInputEQ5D5LComponent_LEQ5D5LHM10" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 25px; height: 17px; transform: translate(4px, 264px) rotate(0deg);">
+          <div class="label-wrapper">
+            <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="10" fontstyle="normal" style="font-size: 14px; font-family: &quot;Times New Roman&quot;; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: right; vertical-align: middle; overflow: hidden; max-width: 25px; text-overflow: clip; height: 17px; padding: inherit;">10</div>
+          </div>
+        </div>
+        <div id="j_205" class="snapp-html5 rotatable element fc Label" obj-name="VASInputEQ5D5LComponent_LEQ5D5LHM0" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 18px; height: 17px; transform: translate(10px, 292px) rotate(0deg);">
+          <div class="label-wrapper">
+            <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="0" fontstyle="normal" style="font-size: 14px; font-family: &quot;Times New Roman&quot;; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: right; vertical-align: middle; overflow: hidden; max-width: 18px; text-overflow: clip; height: 17px; padding: inherit;">0</div>
+          </div>
+        </div>
+        <div id="j_206" class="snapp-html5 rotatable element fc Image" obj-name="VASInputEQ5D5LComponent_IEQ5D5LHMScale" style="display: block; opacity: 1; background-color: rgba(255, 255, 255, 0); width: 48px; height: 322px; transform: translate(20px, 1px) rotate(0deg);"><img src="./img/click.snapp.eq5d5l/newscale.png" crossorigin="anonymous" onmousedown="return false;" scale-type="stretch" style="width: inherit; height: inherit; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+        <div
+          id="j_207" class="snapp-html5 rotatable element fc Image" obj-name="VASInputEQ5D5LComponent_IEQ5D5LHMDot" style="display: block; opacity: 1; background-color: rgba(255, 255, 255, 0); width: 13px; height: 16px; transform: translate(37px, 123px) rotate(0deg);"><img src="./img/click.snapp.eq5d5l/smallreddot.png" crossorigin="anonymous" onmousedown="return false;" scale-type="fit" style="width: inherit; height: initial; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+      <div
+        id="j_208" class="snapp-html5 rotatable element fc Container" obj-name="VASInputEQ5D5LComponent_CEQ5D5LScaleHMMarker" style="display: block; opacity: 1; background-color: rgba(247, 247, 247, 0); overflow: hidden; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: hidden; width: 72px; height: 40px; transform: translate(57px, 112px) rotate(0deg);">
+        <div class="container"></div>
+        <div id="j_209" class="snapp-html5 rotatable element fc Image" obj-name="VASInputEQ5D5LComponent_IEQ5DH5LMArrow" style="display: block; opacity: 1; background-color: rgba(255, 255, 255, 0); width: 39px; height: 39px; transform: translate(1px, 2px) rotate(0deg);"><img src="./img/click.snapp.eq5d5l/click.snapp.user81.vasuicomponentv4/blue-arrow.png" crossorigin="anonymous" onmousedown="return false;" scale-type="stretch" style="width: inherit; height: inherit; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+        <div
+          id="j_210" class="snapp-html5 rotatable element fc Label" obj-name="VASInputEQ5D5LComponent_LEQ5D5LScaleValue" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 42px; height: 39px; transform: translate(40px, 3px) rotate(0deg);">
+          <div class="label-wrapper">
+            <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="100" fontstyle="normal" style="font-size: 20px; font-family: &quot;Times New Roman&quot;; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: left; vertical-align: middle; overflow: hidden; max-width: 42px; text-overflow: clip; height: 39px; padding: inherit;">100</div>
+          </div>
+    </div>
+    </div>
+    </div>
+    <div id="j_211" class="snapp-html5 rotatable element fc Container" obj-name="CEQ5D5LHMOverlay" original-height="668" original-width="375" style="display: block; opacity: 1; background-color: rgba(0, 0, 0, 0.53); overflow: hidden; border-color: rgb(0, 0, 0); border-style: hidden; width: auto; height: auto; transform: translate(0px, 0px); top: 0px; bottom: 0px; left: 0px; right: 0px;">
+      <div class="container"></div>
+      <div id="j_212" class="snapp-html5 rotatable element fc Container" obj-name="CEQ5D5LHMNotification" style="display: block; opacity: 1; background-color: rgba(247, 247, 247, 0); overflow: hidden; width: 331px; height: 153px; transform: translate(22px, 0px); top: 25px;">
+        <div class="container"></div>
+        <div id="j_213" class="snapp-html5 rotatable element fc Label" obj-name="LEQ5D5LHMNotification" style="display: block; background-color: rgb(255, 255, 255); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 331px; height: 153px; transform: translate(0px, 0px) rotate(0deg);">
+          <div class="label-wrapper">
+            <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="" fontstyle="normal" style="font-size: 14px; font-family: Arial; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: left; vertical-align: middle; overflow: hidden; max-width: 331px; text-overflow: clip; height: 153px; padding: inherit;"></div>
+          </div>
+        </div>
+        <div id="j_214" class="snapp-html5 rotatable element fc Label" obj-name="LEQ5D5LHMNotificationText" style="display: block; background-color: rgb(255, 255, 255); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 277px; height: 143px; transform: translate(37px, 0px) rotate(0deg);">
+          <div class="label-wrapper">
+            <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Rich Text" fontstyle="normal" style="white-space: unset; font-size: 14px; font-family: Arial; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: left; vertical-align: middle; overflow: hidden; max-width: 277px; text-overflow: clip; height: 143px; padding: inherit;">Please&nbsp;tap&nbsp;on&nbsp;the&nbsp;scale&nbsp;to&nbsp;indicate<br>how&nbsp;your&nbsp;health&nbsp;is&nbsp;TODAY</div>
+          </div>
+        </div>
+        <div id="j_215" class="snapp-html5 rotatable element fc Button" shadow-h-offset="0px" shadow-v-offset="0px" shadow-blur="0px" shadow-spread="0px" shadow-color="rgba(255,255,255,0)" gradient-type="linear" gradient-direction="0" gradient-start-color="rgba(255,255,255,0)"
+          gradient-end-color="rgba(255,255,255,0)" obj-name="BEQ5D5LHMNotification" style="display: block; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 0px; width: 30px; height: 30px; transform: translate(300px, 0px) rotate(0deg);">
+          <div type="button" class="html5 btn system" fontstyle="normal" style="opacity: 1; background-color: rgba(51, 176, 230, 0); text-align: center; justify-content: center; font-family: Helvetica; font-size: 14px; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-decoration: none; background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));">
+            <div class="img-container" style="display: none;">
+              <img class="foreground" src="" crossorigin="anonymous">
+
+            </div>
+            <span class="text">X</span>
+          </div>
+        </div>
+        <div id="j_216" class="snapp-html5 rotatable element fc Button" shadow-h-offset="0px" shadow-v-offset="0px" shadow-blur="0px" shadow-spread="0px" shadow-color="rgba(255,255,255,0)" gradient-type="linear" gradient-direction="0" gradient-start-color="rgba(255,255,255,0)"
+          gradient-end-color="rgba(255,255,255,0)" obj-name="BEQ5D5LHMNotificationOK" style="display: block; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 0px; width: 141px; height: 45px; transform: translate(180px, 99px) rotate(0deg);">
+          <div type="button" class="html5 btn custom" fontstyle="normal" style="opacity: 1; background-color: rgba(51, 176, 230, 0); text-align: center; justify-content: center; font-family: Arial; font-size: 14px; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-decoration: none; background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));">
+            <div class="img-container">
+              <img class="foreground" src="./img/click.snapp.eq5d5l/button.png" crossorigin="anonymous">
+              <img class="highlight" src="./img/click.snapp.eq5d5l/click.snapp.user81.radiobuttonsuicomponent/buttonClicked.png" crossorigin="anonymous" style="display:none;">
+            </div>
+            <span class="text" style="height: 21px;">OK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="j_217" class="snapp-html5 rotatable element fc Label" obj-name="ErrorLabelCRQ5DL" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 258px; height: 40px; transform: translate(61px, 429px) rotate(0deg);">
+      <div class="label-wrapper">
+        <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="Error" fontstyle="normal" style="font-size: 14px; font-family: Arial; font-style: normal; font-weight: normal; color: rgb(255, 0, 0); text-align: center; vertical-align: middle; overflow: hidden; max-width: 258px; text-overflow: clip; height: 40px; padding: inherit;">Error</div>
+      </div>
+    </div>
+    </div>
+    <div id="j_218" class="snapp-html5 rotatable element fc Screen" overlay-color="rgba(255,255,255,0.75)" spinner-url="./img/click.snapp.eq5d5l/ezgif.com-resize.gif" obj-name="SEQ5D5LBasic" style="background-color: rgb(255, 255, 255); width: 375px; height: 667px; transform: translate(100px, 867px) rotate(0deg);">
+      <div class="screen-container"><img src="" crossorigin="anonymous"></div>
+      <div id="j_219" class="snapp-html5 rotatable element fc Label" obj-name="LEQ5D5LBasicTitle" style="display: block; background-color: rgb(0, 0, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 375px; height: 65px; transform: translate(0px, 0px); top: 0px;">
+        <div class="label-wrapper">
+          <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="EQ-5D-5L" fontstyle="normal" style="font-size: 18px; font-family: Arial; font-style: normal; font-weight: normal; color: rgb(255, 255, 255); text-align: center; vertical-align: middle; overflow: hidden; max-width: 375px; text-overflow: clip; height: 65px; padding: inherit;">EQ-5D-5L</div>
+        </div>
+      </div>
+      <div id="j_220" class="snapp-html5 rotatable element fc Label" obj-name="LEQ5D5LBasicText" original-width="322" style="display: block; background-color: rgb(255, 255, 255); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: auto; height: 375px; transform: translate(0px, 0px); left: 25px; right: 28px; top: 90px;">
+        <div class="label-wrapper">
+          <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Rich Text" fontstyle="normal" style="white-space: unset; font-size: 16px; font-family: Arial; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: left; vertical-align: top; overflow: hidden; max-width: 322px; text-overflow: clip; height: 375px; padding: inherit;"></div>
+        </div>
+      </div>
+      <div id="j_221" class="snapp-html5 rotatable element fc Container" obj-name="CEQ5D5LBasic" style="display: block; opacity: 1; background-color: rgb(226, 226, 226); overflow: hidden; width: 375px; height: 1px; transform: translate(0px, 0px); bottom: 121px;">
+        <div class="container"></div>
+      </div>
+      <div id="j_222" class="snapp-html5 rotatable element fc Label" obj-name="LEQ5D5LBasicFooter" style="display: block; background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 320px; height: 46px; transform: translate(28px, 0px); bottom: 11px;">
+        <div class="label-wrapper">
+          <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Rich Text" fontstyle="italic" style="white-space: unset; font-size: 10px; font-family: Arial; font-style: italic; font-weight: normal; color: rgb(0, 0, 0); text-align: center; vertical-align: middle; overflow: hidden; max-width: 320px; text-overflow: clip; height: 46px; padding: inherit;">©&nbsp;EuroQol&nbsp;Research&nbsp;Foundation.&nbsp;EQ-5D™&nbsp;is&nbsp;a&nbsp;trade&nbsp;mark&nbsp;<br>of&nbsp;the&nbsp;EuroQol&nbsp;Research&nbsp;Foundation</div>
+        </div>
+      </div>
+      <div id="j_223" class="snapp-html5 rotatable element fc Container" obj-name="CEQ5D5LBasicPrev" style="display: block; opacity: 1; background-color: rgba(247, 247, 247, 0); overflow: hidden; width: 136px; height: 52px; transform: translate(0px, 0px); left: 40px; bottom: 61px;">
+        <div class="container"></div>
+        <div id="j_224" class="snapp-html5 rotatable element fc Button" shadow-h-offset="0px" shadow-v-offset="0px" shadow-blur="0px" shadow-spread="0px" shadow-color="rgba(255,255,255,0)" gradient-type="linear" gradient-direction="0" gradient-start-color="rgba(255,255,255,0)"
+          gradient-end-color="rgba(255,255,255,0)" obj-name="BEQ5D5LBasicPrev" style="display: block; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 0px; width: 130px; height: 44px; transform: translate(3px, 7px) rotate(0deg);">
+          <div type="button" class="html5 btn custom" fontstyle="normal" style="opacity: 1; background-color: rgba(51, 176, 230, 0); text-align: center; justify-content: center; font-family: Helvetica; font-size: 14px; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-decoration: none; background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));">
+            <div class="img-container">
+              <img class="foreground" src="./img/click.snapp.eq5d5l/gradBack.png" crossorigin="anonymous">
+              <img class="highlight" src="./img/click.snapp.eq5d5l/inv.png" crossorigin="anonymous" style="display:none;">
+            </div>
+            <span class="text" style="height: 21px;">Previous</span>
+          </div>
+        </div>
+      </div>
+      <div id="j_225" class="snapp-html5 rotatable element fc Container" obj-name="CEQ5D5LBasicNext" style="display: block; opacity: 1; background-color: rgba(247, 247, 247, 0); overflow: hidden; width: 136px; height: 52px; transform: translate(0px, 0px); right: 40px; bottom: 61px;">
+        <div class="container"></div>
+        <div id="j_226" class="snapp-html5 rotatable element fc Button" shadow-h-offset="0px" shadow-v-offset="0px" shadow-blur="0px" shadow-spread="0px" shadow-color="rgba(255,255,255,0)" gradient-type="linear" gradient-direction="0" gradient-start-color="rgba(255,255,255,0)"
+          gradient-end-color="rgba(255,255,255,0)" obj-name="BEQ5D5LBasicNext" style="display: block; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 0px; width: 131px; height: 44px; transform: translate(4px, 7px) rotate(0deg);">
+          <div type="button" class="html5 btn custom" fontstyle="normal" style="opacity: 1; background-color: rgba(51, 176, 230, 0); text-align: center; justify-content: center; font-family: Helvetica; font-size: 14px; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-decoration: none; background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));">
+            <div class="img-container">
+              <img class="foreground" src="./img/click.snapp.eq5d5l/gradNext.png" crossorigin="anonymous">
+              <img class="highlight" src="./img/click.snapp.eq5d5l/inv.png" crossorigin="anonymous" style="display:none;">
+            </div>
+            <span class="text" style="height: 21px;">Next</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
